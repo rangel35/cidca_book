@@ -1,0 +1,218 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.cidca_book.field_access_condition
+    - field.field.node.cidca_book.field_change_date
+    - field.field.node.cidca_book.field_condition
+    - field.field.node.cidca_book.field_contributor
+    - field.field.node.cidca_book.field_creation_date
+    - field.field.node.cidca_book.field_date_other
+    - field.field.node.cidca_book.field_dcterms_alternative
+    - field.field.node.cidca_book.field_description
+    - field.field.node.cidca_book.field_description_language
+    - field.field.node.cidca_book.field_digital_origin
+    - field.field.node.cidca_book.field_extent
+    - field.field.node.cidca_book.field_foaf_organization
+    - field.field.node.cidca_book.field_foaf_person
+    - field.field.node.cidca_book.field_genre
+    - field.field.node.cidca_book.field_geographic_city
+    - field.field.node.cidca_book.field_geographic_city_section
+    - field.field.node.cidca_book.field_geographic_country
+    - field.field.node.cidca_book.field_geographic_county
+    - field.field.node.cidca_book.field_geographic_department
+    - field.field.node.cidca_book.field_geographic_municipality
+    - field.field.node.cidca_book.field_geographic_province
+    - field.field.node.cidca_book.field_geographic_region
+    - field.field.node.cidca_book.field_identifier_local
+    - field.field.node.cidca_book.field_info_creation
+    - field.field.node.cidca_book.field_member_of
+    - field.field.node.cidca_book.field_merged
+    - field.field.node.cidca_book.field_notes
+    - field.field.node.cidca_book.field_number
+    - field.field.node.cidca_book.field_origin_info
+    - field.field.node.cidca_book.field_origin_place
+    - field.field.node.cidca_book.field_publisher
+    - field.field.node.cidca_book.field_repository
+    - field.field.node.cidca_book.field_resource_type
+    - field.field.node.cidca_book.field_rights_statement
+    - field.field.node.cidca_book.field_subject_geographic
+    - field.field.node.cidca_book.field_subject_topic
+    - field.field.node.cidca_book.field_table_contents
+    - field.field.node.cidca_book.field_volume
+    - field.field.node.cidca_book.field_year_founded
+    - node.type.cidca_book
+  module:
+    - controlled_access_terms
+    - datetime
+    - user
+id: node.cidca_book.content_browser
+targetEntityType: node
+bundle: cidca_book
+mode: content_browser
+content:
+  display_media_entity_view_1:
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_entity_view_2:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_access_condition:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_condition:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_creation_date:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_dcterms_alternative:
+    weight: 16
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_foaf_organization:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: typed_relation_default
+    region: content
+  field_foaf_person:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: typed_relation_default
+    region: content
+  field_genre:
+    weight: 13
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_identifier_local:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_member_of:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_notes:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_number:
+    weight: 7
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_resource_type:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_subject_geographic:
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_volume:
+    weight: 17
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_year_founded:
+    weight: 9
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  openseadragon_media_evas_service_file:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  display_media_service_file: true
+  display_media_thumbnail: true
+  field_change_date: true
+  field_contributor: true
+  field_date_other: true
+  field_description: true
+  field_description_language: true
+  field_digital_origin: true
+  field_extent: true
+  field_geographic_city: true
+  field_geographic_city_section: true
+  field_geographic_country: true
+  field_geographic_county: true
+  field_geographic_department: true
+  field_geographic_municipality: true
+  field_geographic_province: true
+  field_geographic_region: true
+  field_info_creation: true
+  field_merged: true
+  field_origin_info: true
+  field_origin_place: true
+  field_publisher: true
+  field_repository: true
+  field_rights_statement: true
+  field_subject_topic: true
+  field_table_contents: true
+  langcode: true
+  links: true

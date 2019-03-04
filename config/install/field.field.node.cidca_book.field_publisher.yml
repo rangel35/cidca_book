@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publisher
+    - node.type.cidca_book
+  module:
+    - link
+id: node.cidca_book.field_publisher
+field_name: field_publisher
+entity_type: node
+bundle: cidca_book
+label: Publisher
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

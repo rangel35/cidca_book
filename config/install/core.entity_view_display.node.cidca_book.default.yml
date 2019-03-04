@@ -1,0 +1,404 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cidca_book.field_access_condition
+    - field.field.node.cidca_book.field_change_date
+    - field.field.node.cidca_book.field_condition
+    - field.field.node.cidca_book.field_contributor
+    - field.field.node.cidca_book.field_creation_date
+    - field.field.node.cidca_book.field_date_other
+    - field.field.node.cidca_book.field_dcterms_alternative
+    - field.field.node.cidca_book.field_dcterms_language
+    - field.field.node.cidca_book.field_description
+    - field.field.node.cidca_book.field_description_language
+    - field.field.node.cidca_book.field_digital_origin
+    - field.field.node.cidca_book.field_extent
+    - field.field.node.cidca_book.field_foaf_organization
+    - field.field.node.cidca_book.field_foaf_person
+    - field.field.node.cidca_book.field_genre
+    - field.field.node.cidca_book.field_geographic_city
+    - field.field.node.cidca_book.field_geographic_city_section
+    - field.field.node.cidca_book.field_geographic_country
+    - field.field.node.cidca_book.field_geographic_county
+    - field.field.node.cidca_book.field_geographic_department
+    - field.field.node.cidca_book.field_geographic_municipality
+    - field.field.node.cidca_book.field_geographic_province
+    - field.field.node.cidca_book.field_geographic_region
+    - field.field.node.cidca_book.field_identifier_local
+    - field.field.node.cidca_book.field_info_creation
+    - field.field.node.cidca_book.field_member_of
+    - field.field.node.cidca_book.field_merged
+    - field.field.node.cidca_book.field_notes
+    - field.field.node.cidca_book.field_number
+    - field.field.node.cidca_book.field_origin_info
+    - field.field.node.cidca_book.field_origin_place
+    - field.field.node.cidca_book.field_publisher
+    - field.field.node.cidca_book.field_repository
+    - field.field.node.cidca_book.field_resource_type
+    - field.field.node.cidca_book.field_rights_statement
+    - field.field.node.cidca_book.field_subject_geographic
+    - field.field.node.cidca_book.field_subject_topic
+    - field.field.node.cidca_book.field_table_contents
+    - field.field.node.cidca_book.field_volume
+    - field.field.node.cidca_book.field_year_founded
+    - node.type.cidca_book
+  module:
+    - controlled_access_terms
+    - datetime
+    - link
+    - text
+    - user
+id: node.cidca_book.default
+targetEntityType: node
+bundle: cidca_book
+mode: default
+content:
+  display_media_entity_view_2:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  display_media_thumbnail:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_access_condition:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_change_date:
+    weight: 148
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_condition:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_contributor:
+    weight: 128
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_creation_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_other:
+    weight: 132
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_dcterms_alternative:
+    weight: 122
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dcterms_language:
+    weight: 149
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_description:
+    weight: 125
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_description_language:
+    weight: 144
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_digital_origin:
+    weight: 134
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_extent:
+    weight: 133
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_foaf_organization:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: typed_relation_default
+    region: content
+  field_foaf_person:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: typed_relation_default
+    region: content
+  field_genre:
+    weight: 119
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geographic_city:
+    weight: 142
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geographic_city_section:
+    weight: 143
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geographic_country:
+    weight: 136
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geographic_county:
+    weight: 141
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geographic_department:
+    weight: 139
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geographic_municipality:
+    weight: 140
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geographic_province:
+    weight: 138
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_geographic_region:
+    weight: 137
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_identifier_local:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_info_creation:
+    weight: 147
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_member_of:
+    weight: 118
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_merged:
+    weight: 124
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_notes:
+    weight: 116
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_number:
+    weight: 113
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_origin_info:
+    weight: 131
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_origin_place:
+    weight: 145
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_publisher:
+    weight: 129
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_repository:
+    weight: 126
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_resource_type:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_rights_statement:
+    weight: 127
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_subject_geographic:
+    weight: 121
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subject_topic:
+    weight: 135
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_table_contents:
+    weight: 130
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_volume:
+    weight: 123
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_year_founded:
+    weight: 115
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  openseadragon_media_evas_service_file:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  display_media_entity_view_1: true
+  langcode: true
+  links: true

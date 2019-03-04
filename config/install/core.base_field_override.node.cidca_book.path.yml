@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cidca_book
+  module:
+    - path
+id: node.cidca_book.path
+field_name: path
+entity_type: node
+bundle: cidca_book
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

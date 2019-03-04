@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geographic_province
+    - node.type.cidca_book
+id: node.cidca_book.field_geographic_province
+field_name: field_geographic_province
+entity_type: node
+bundle: cidca_book
+label: 'Geographic Province'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

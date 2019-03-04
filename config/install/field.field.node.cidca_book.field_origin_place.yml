@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_origin_place
+    - node.type.cidca_book
+id: node.cidca_book.field_origin_place
+field_name: field_origin_place
+entity_type: node
+bundle: cidca_book
+label: 'Country of Origin'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * CIDCA book stuff.
+ */
+
+/**
+ * Implements hook_rdf_namespaces().
+ */
+function cidca_book_rdf_namespaces() {
+  return [
+    'bf' => 'http://id.loc.gov/ontologies/bibframe/',
+	'dce' => 'http://purl.org/dc/elements/1.1/',
+    'dcterms' => 'http://purl.org/dc/terms/',
+    'ebucore' => 'http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#',
+    'fedora' => 'http://fedora.info/definitions/v4/repository#',
+    'foaf' => 'http://xmlns.com/foaf/0.1/',
+    'iana' => 'http://www.iana.org/assignments/relation/',
+    'islandora' => 'http://islandora.ca/CLAW/',
+    'ore' => 'http://www.openarchives.org/ore/terms/',
+    'owl' => 'http://www.w3.org/2002/07/owl#',
+    'pcdm' => 'http://pcdm.org/models#',
+    'rdf' => 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+	'rel' => 'http://id.loc.gov/vocabulary/relators/',
+	'schema' => 'http://schema.org/',
+	'skos' => 'http://www.w3.org/2004/02/skos/core#',
+    'use' => 'http://pcdm.org/use#',
+    'juso' => 'http://rdfs.co/juso/',
+  ];
+}
+

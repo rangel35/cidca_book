@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_of
+    - node.type.cidca_book
+    - node.type.islandora_object
+id: node.cidca_book.field_member_of
+field_name: field_member_of
+entity_type: node
+bundle: cidca_book
+label: 'Member of Collection'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cidca_book: cidca_book
+      islandora_object: islandora_object
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: cidca_book
+field_type: entity_reference

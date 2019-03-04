@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foaf_person
+    - node.type.cidca_book
+    - taxonomy.vocabulary.person
+  module:
+    - controlled_access_terms
+id: node.cidca_book.field_foaf_person
+field_name: field_foaf_person
+entity_type: node
+bundle: cidca_book
+label: 'Personal Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: name
+      direction: asc
+    auto_create: 0
+    auto_create_bundle: ''
+  rel_types:
+    Contributor: Contributor
+    Director: Director
+    'Chief Administrator': 'Chief Administrator'
+    Editor: Editor
+field_type: typed_relation

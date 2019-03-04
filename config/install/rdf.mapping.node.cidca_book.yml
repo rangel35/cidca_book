@@ -1,0 +1,161 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cidca_book
+  enforced:
+    module:
+      - cidca_book
+  module:
+    - node
+id: node.cidca_book
+targetEntityType: node
+bundle: cidca_book
+types:
+  - 'pcdm:Object'
+fieldMappings:
+  field_identifier_local:
+    properties:
+      - 'dcterms:identifier'
+  title:
+    properties:
+      - 'dc:title'
+      - 'bf:title'
+  field_genre:
+    properties:
+      - 'schema:genre'
+  field_creation_date:
+    properties:
+      - 'dcterms:created'
+  field_dcterms_language:
+    properties:
+      - 'dcterms:language'
+  field_description:
+    properties:
+      - 'dc:description'
+      - 'dcterms:description '
+  field_rights_statement:
+    properties:
+      - 'dce:rights'
+  field_access_condition:
+    properties:
+      - 'dcterms:accessRights'
+  field_origin_place:
+    properties:
+      - 'bf:physicalLocation'
+  field_collection:
+    properties:
+      - 'dcterms:isPartOf'
+  field_repository:
+    properties:
+      - 'rel:rps'
+  field_dcterms_alternative:
+    properties:
+      - 'dcterms:alternative'
+  field_contributor:
+    properties:
+      - 'dce:contributor'
+  field_publisher:
+    properties:
+      - 'rel:pbl'
+  field_table_contents:
+    properties:
+      - 'dcterms:tableOfContents'
+  field_resource_type:
+    properties:
+      - 'dcterms:type'
+  field_origin_info:
+    properties:
+      - 'dce:source'
+  field_date_other:
+    properties:
+      - 'dcterms:date'
+  field_extent:
+    properties:
+      - 'dcterms:extent'
+      - 'dc:extent'
+  field_digital_origin:
+    properties:
+      - 'bf:derivedFrom'
+  field_condition:
+    properties:
+      - 'skos:note'
+  field_notes:
+    properties:
+      - 'skos:note'
+  field_subject_topic:
+    properties:
+      - 'dce:subject'
+  field_foaf_person:
+    properties:
+      - 'foaf:person'
+  field_foaf_organization:
+    properties:
+      - 'foaf:organization'
+  field_subject_geographic:
+    properties:
+      - 'dce:coverage'
+  field_geographic_country:
+    properties:
+      - 'juso:country'
+  field_geographic_region:
+    properties:
+      - 'juso:SpatialThing'
+  field_geographic_province:
+    properties:
+      - 'juso:province'
+  field_geographic_department:
+    properties:
+      - 'juso:FirstLevelAdministrativeDivision'
+  field_geographic_municipality:
+    properties:
+      - 'juso:municipality'
+  field_geographic_county:
+    properties:
+      - 'juso:county'
+  field_geographic_city:
+    properties:
+      - 'juso:city'
+  field_geographic_city_section:
+    properties:
+      - 'juso:neighborhood'
+  field_volume:
+    properties:
+      - 'bf:enumeration'
+  field_number:
+    properties:
+      - 'schema:issueNumber'
+  field_description_language:
+    properties:
+      - 'bf:descriptionLanguage'
+  field_merged:
+    properties:
+      - 'skos:note'
+  field_member_of:
+    properties:
+      - 'pcdm:memberOf'
+    mapping_type: rel
+  field_edtf_date_created:
+    properties:
+      - 'dc:created'
+    datatype_callback:
+      callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
+  field_edtf_date_issued:
+    properties:
+      - 'dc:issued'
+    datatype_callback:
+      callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
+  created:
+    properties:
+      - 'schema:dateCreated'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  changed:
+    properties:
+      - 'schema:dateModified'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  uid:
+    properties:
+      - 'schema:author'
+    mapping_type: rel

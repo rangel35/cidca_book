@@ -1,0 +1,34 @@
+name: 'CIDCA Book'
+description: 'Provides CIDCA Book content type and related configuration. form for adding books to CIDCA collection'
+type: module
+core: 8.x
+dependencies:
+  - content_translation
+  - context
+  - controlled_access_terms
+  - controlled_access_terms_default_configuration
+  - datetime
+  - eva
+  - field
+  - field_group
+  - field_permissions
+  - file
+  - image
+  - islandora
+  - islandora_core_feature
+  - islandora_demo
+  - islandora_image
+  - language
+  - link
+  - media
+  - menu_ui
+  - migrate_plus
+  - node
+  - openseadragon
+  - path
+  - rdf
+  - system
+  - taxonomy
+  - text
+  - user
+  - views

@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_type
+    - node.type.cidca_book
+    - taxonomy.vocabulary.resource_types
+  content:
+    - 'taxonomy_term:resource_types:84157594-d680-4656-a8ef-73743f00be98'
+id: node.cidca_book.field_resource_type
+field_name: field_resource_type
+entity_type: node
+bundle: cidca_book
+label: Type
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 84157594-d680-4656-a8ef-73743f00be98
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      resource_types: resource_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

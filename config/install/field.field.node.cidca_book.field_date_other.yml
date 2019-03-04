@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_other
+    - node.type.cidca_book
+  module:
+    - datetime
+id: node.cidca_book.field_date_other
+field_name: field_date_other
+entity_type: node
+bundle: cidca_book
+label: 'Date Other'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

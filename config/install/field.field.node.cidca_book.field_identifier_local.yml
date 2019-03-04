@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_identifier_local
+    - node.type.cidca_book
+id: node.cidca_book.field_identifier_local
+field_name: field_identifier_local
+entity_type: node
+bundle: cidca_book
+label: 'Local Identifier'
+description: Identifier-filename
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
